@@ -1,0 +1,53 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Demostración de ubicación IP</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <main class="container">
+
+        <h1>Demostración de ubicación</h1>
+
+        
+<div class="video">
+    <video controls width="100%">
+        <source src="https://interactive-examples.mdn.mozilla.net/media/cc0-videos/flower.mp4" type="video/mp4">
+        Tu navegador no puede reproducir este video.
+    </video>
+</div>
+
+
+        <p class="notice">
+            Esta demostración consultará tu IP pública y
+            ubicación aproximada. No se recopilará tu
+            ubicación GPS.
+        </p>
+
+        <button id="startButton">
+            Consultar mi ubicación aproximada
+        </button>
+
+        <section id="results" hidden>
+            <h2>Información de conexión</h2>
+
+            <p><strong>IP:</strong> <span id="ip"></span></p>
+            <p><strong>Ciudad:</strong> <span id="city"></span></p>
+            <p><strong>Región:</strong> <span id="region"></span></p>
+            <p><strong>País:</strong> <span id="country"></span></p>
+            <p><strong>Proveedor:</strong> <span id="isp"></span></p>
+            <p><strong>Fecha:</strong> <span id="date"></span></p>
+        </section>
+
+        <p id="status"></p>
+
+    </main>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
